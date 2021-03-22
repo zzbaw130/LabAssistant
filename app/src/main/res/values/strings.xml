@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">物理实验助手</string>
+    <string name="first_step">数据输入</string>
+    <string name="second_step">数据处理</string>
+</resources>

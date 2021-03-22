@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Second"
+    android:layout_gravity="right"
+    android:orientation="vertical"
+    android:background="#FFF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textColor="#6B1AE6"
+                android:text="A类不确定度：">
+            </TextView>
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="51dp"
+                android:background="@drawable/una"
+                ></ImageView>
+            <TextView
+                android:id="@+id/getUncertaintyA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#3CC472"
+                android:text=""
+                android:layout_marginBottom="30dp"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textColor="#6B1AE6"
+                android:text="B类不确定度："></TextView>
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="51dp"
+                android:background="@drawable/unb"
+                ></ImageView>
+            <TextView
+                android:id="@+id/getUncertaintyB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#3CC472"
+                android:text=""
+                android:layout_marginBottom="30dp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textColor="#6B1AE6"
+                android:text="总不确定度："></TextView>
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="51dp"
+                android:background="@drawable/unall"
+                ></ImageView>
+            <TextView
+                android:id="@+id/getAllUncertainty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#3CC472"
+                android:text=""
+                android:layout_marginBottom="30dp"
+                ></TextView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

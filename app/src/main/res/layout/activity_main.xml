@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/goFun1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="数据处理" />
+
+        <Button
+            android:id="@+id/goFun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="最小二乘" />
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/isInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:textSize="20sp"
+        android:text="说明"
+        ></CheckBox>
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="
+        1.“数据处理”能够根据传入的一组待计算的数据，返回其标准偏差、不确定度等等。\n
+        2.“最小二乘”能够根据传入的两组对应的数据，返回最小二乘法中的相关数据\n
+        3.此软件仅能进行最终的计算，前期的计算还需要同学们自己计算\n
+        4.遇到需要画图的题，结合Excel使用即可
+        "
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textSize="16sp"
+            android:text="\@Class:Computer1904\n\@author:Triple Dirt"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+</LinearLayout>
