@@ -81,7 +81,7 @@ public class Second extends Fragment {
         getUncertaintyAll.setText("="+String.format("%.9f",uncertaintyAll));
     }
 
-    //计算A类不确定度
+    //计算A类不确定度，大于10的部分
     private double getUncertaintyA(){
         if(n<=10)
             return calculations[1]*(t_n[n-2]);

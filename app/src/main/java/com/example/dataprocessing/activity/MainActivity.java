@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //说明按钮
         Instruction = findViewById(R.id.instruction);
         isInstruction = findViewById(R.id.isInstruction);
         isInstruction.setOnClickListener(new View.OnClickListener() {

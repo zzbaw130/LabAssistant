@@ -1,7 +1,7 @@
 package com.example.dataprocessing.activity;
 
 public class MathTool {
-
+    //计算平均值
     public static double getAvg(double[] datas){
         double sum = 0.0;
         for (double data:datas)
@@ -39,7 +39,7 @@ public class MathTool {
         return Math.sqrt(a*a+b*b);
     }
 
-    //计算Sxx
+    //计算SXX
     public static double getSXX(double[] datas1,double[] datas2){
         double SXX = 0.0;
         int n = datas1.length;
@@ -48,6 +48,7 @@ public class MathTool {
         return SXX - n*getAvg(datas1)*getAvg(datas2);
     }
 
+    //将不确定度按规则修约
     public static String reviseUncertainty(double uncertainty){
         String str = String.format("%.32f",uncertainty);
         int pos = str.indexOf('.');

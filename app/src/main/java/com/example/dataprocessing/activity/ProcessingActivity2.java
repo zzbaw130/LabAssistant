@@ -53,7 +53,7 @@ public class ProcessingActivity2 extends AppCompatActivity {
                 label.setText("第"+(i-n)+"次Y: "+datasY[i-n-1]);
             showDatas2.addView(label);
         }
-
+        //计算数据
         double X = MathTool.getAvg(datasX);
         double Y = MathTool.getAvg(datasY);
         double Sxx = MathTool.getSXX(datasX,datasX);
@@ -61,6 +61,7 @@ public class ProcessingActivity2 extends AppCompatActivity {
         double Sxy = MathTool.getSXX(datasX,datasY);
         double K = Sxy/Sxx;
         double B = Y-K*X;
+        //查找组件
         getX = findViewById(R.id.LS_getX);
         getY = findViewById(R.id.LS_getY);
         getSxx = findViewById(R.id.LS_getSxx);
@@ -68,7 +69,7 @@ public class ProcessingActivity2 extends AppCompatActivity {
         getSxy = findViewById(R.id.LS_getSxy);
         getK = findViewById(R.id.LS_getK);
         getB = findViewById(R.id.LS_getB);
-
+        //展示数据
         getX.setText("="+MathTool.remove0(String.format("%.9f",X)));
         getY.setText("="+MathTool.remove0(String.format("%.9f",Y)));
         getSxx.setText("="+MathTool.remove0(String.format("%.9f",Sxx)));
