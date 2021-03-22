@@ -26,6 +26,7 @@ public class InputTool {
         labels=new TextView[n];
         inputs=new EditText[n];
 
+        //设置组件样式
         LinearLayout.LayoutParams params1=new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         LinearLayout.LayoutParams params2=new LinearLayout.LayoutParams(
