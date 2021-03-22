@@ -52,7 +52,9 @@
         android:visibility="invisible"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -61,8 +63,6 @@
             android:textAlignment="textEnd"
             android:textSize="16sp"
             android:text="\@Class:Computer1904\n\@Author:Triple Dirt"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
             tools:ignore="RtlCompat" />
     </LinearLayout>
 </LinearLayout>
