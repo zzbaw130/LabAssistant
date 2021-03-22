@@ -26,6 +26,7 @@
             android:textSize="20sp"
             android:text="最小二乘" />
     </LinearLayout>
+
     <CheckBox
         android:id="@+id/isInstruction"
         android:layout_width="wrap_content"
@@ -33,8 +34,7 @@
         android:layout_gravity="center_horizontal"
         android:checked="false"
         android:textSize="20sp"
-        android:text="说明"
-        ></CheckBox>
+        android:text="说明" />
     <TextView
         android:id="@+id/instruction"
         android:layout_width="wrap_content"
@@ -44,7 +44,9 @@
         1.“数据处理”能够根据传入的一组待计算的数据，返回其标准偏差、不确定度等等。\n
         2.“最小二乘”能够根据传入的两组对应的数据，返回最小二乘法中的相关数据\n
         3.此软件仅能进行最终的计算，前期的计算还需要同学们自己计算\n
-        4.遇到需要画图的题，结合Excel使用即可
+        4.遇到需要画图的题，结合Excel使用即可\n
+        5.若有意向学习或升级此App，GitHub如下:\n
+        https://github.com/zzbaw130/LabAssistant
         "
         android:visibility="invisible"/>
     <LinearLayout
@@ -56,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:textSize="16sp"
-            android:text="\@Class:Computer1904\n\@author:Triple Dirt"
+            android:text="\@Class:Computer1904\n\@Author:Triple Dirt"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"/>
     </LinearLayout>
